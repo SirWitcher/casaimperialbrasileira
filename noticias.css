@@ -1,0 +1,130 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #f8f5f0;
+    color: #333;
+    line-height: 1.6;
+    animation: fadeIn 1s ease;
+}
+
+/* Fade inicial */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f8f5f0;
+    color: black;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Notícias */
+.noticias-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.noticias-container h2 {
+    font-size: 2.5em;
+    color: #002244;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.noticia {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    animation: slideUp 1s ease;
+}
+
+.noticia h3 {
+    color: #009440;
+    font-size: 1.8em;
+    margin-bottom: 8px;
+}
+
+.noticia .data {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.noticia p {
+    margin-bottom: 12px;
+}
+
+.noticia a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #002244;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.noticia a:hover {
+    color: #ffcc00;
+    transform: translateX(5px);
+}
+
+/* Animação Slide Up */
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #009440;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}

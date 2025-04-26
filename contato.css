@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: #f8f5f0;
+    color: #333;
+    line-height: 1.6;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    background-color: #f8f5f0;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 80px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.contato-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contato-container h2 {
+    font-size: 2.2em;
+    color: #007024;
+    margin-bottom: 10px;
+}
+
+.contato-container p {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.formulario-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contato label {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Georgia', serif;
+}
+
+.formulario-contato button {
+    padding: 12px;
+    background-color: #007024;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.formulario-contato button:hover {
+    background-color: #ffcc00;
+    color: #002244;
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.modal-content h3 {
+    color: #002244;
+    margin-bottom: 15px;
+}
+
+.modal-content button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007024;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #ffcc00;
+    color: #002244;
+}
+
+/* Rodapé */
+footer {
+    background-color: #007024;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}

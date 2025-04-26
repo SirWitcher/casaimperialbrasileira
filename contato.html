@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Casa Imperial Brasileira</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logoimperial.png" alt="Logo da Casa Imperial">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="index.html">Linha de Sucessão</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="documentos.html">Documentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato-container">
+            <h2>Entre em Contato</h2>
+            <p>Envie sua mensagem para a Casa Imperial Brasileira.</p>
+
+            <form class="formulario-contato" id="formulario">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
+
+                <label for="assunto">Assunto:</label>
+                <input type="text" id="assunto" name="assunto" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+
+                <button type="submit">Enviar Carta</button>
+            </form>
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h3>Mensagem Enviada</h3>
+            <p>Sua carta foi recebida pela Casa Imperial Brasileira. Entraremos em contato em breve.</p>
+            <button onclick="fecharModal()">Fechar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Casa Imperial Brasileira. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="contato.js"></script>
+</body>
+</html>
